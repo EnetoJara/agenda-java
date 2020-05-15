@@ -1,5 +1,6 @@
 package com.databases;
 
+import com.databases.controllers.MainController;
 import com.databases.views.MainView;
 
 public class Main {
@@ -9,8 +10,7 @@ public class Main {
 	 * @param args - arguments.
 	 */
 	public static void main (String[] args) {
-		MainView m = new MainView();
-		m.setVisible(true);
+		MainController m = new MainController();
 	}
 	
 }

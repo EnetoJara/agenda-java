@@ -4,6 +4,7 @@ import java.awt.HeadlessException;
 import java.awt.MenuBar;
 
 import javax.swing.JFrame;
+import javax.swing.JInternalFrame;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
@@ -41,5 +42,42 @@ public class MainView extends JFrame {
 		
 		iBuscar = new JMenuItem("Buscar");
 		mContactos.add(iBuscar);	
+	}
+	
+	public void agregarVista (JInternalFrame v) {
+		this.getContentPane().add(v);
+	}
+
+	public JMenuItem getiAgregar() {
+		return iAgregar;
+	}
+
+	public void setiAgregar(JMenuItem iAgregar) {
+		this.iAgregar = iAgregar;
+	}
+
+	public JMenuItem getiEditar() {
+		return iEditar;
+	}
+
+	public void setiEditar(JMenuItem iEditar) {
+		this.iEditar = iEditar;
+	}
+
+	public JMenuItem getiEliminar() {
+		return iEliminar;
+	}
+
+	public void setiEliminar(JMenuItem iEliminar) {
+		this.iEliminar = iEliminar;
+	}
+
+	public JMenuItem getiBuscar() {
+		return iBuscar;
+	}
+
+	public void setiBuscar(JMenuItem iBuscar) {
+		this.iBuscar = iBuscar;
 	}	
+	
 }
