@@ -25,6 +25,8 @@ public class AgregarController {
 				guardarContacto(arg0);
 			}
 		};
+		
+		this.ag.getBtnAgregar().addActionListener(this.eventoGuardar);
 	}
 	
 	public JInternalFrame mostrarVista () {

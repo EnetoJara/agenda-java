@@ -35,11 +35,10 @@ public class Connector {
 		try {
 			// We register the MySQL (MariaDB) driver
             // Registramos el driver de MySQL (MariaDB)
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			// Datablase Connect
 			// Conectamos con la base de datos
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/agenda", "xulescode", "xulescode");
-			conn.setAutoCommit(false);
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/agenda", "root", "password");
 			conn.isValid(50000);
 			return conn;
 		} catch (ClassNotFoundException ex) {

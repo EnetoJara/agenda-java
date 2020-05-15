@@ -116,20 +116,20 @@ public class AgregarContacto extends JInternalFrame {
 		txtNombre.setColumns(10);
 		
 		JLabel lblApellido = new JLabel("Apellido *");
-		lblApellido.setBounds(12, 41, 70, 15);
+		lblApellido.setBounds(252, 12, 70, 15);
 		getContentPane().add(lblApellido);
 		
 		txtApellido = new JTextField();
-		txtApellido.setBounds(100, 41, 140, 19);
+		txtApellido.setBounds(340, 12, 140, 19);
 		getContentPane().add(txtApellido);
 		txtApellido.setColumns(10);
 		
 		lblEmail = new JLabel("Email *");
-		lblEmail.setBounds(252, 6, 70, 19);
+		lblEmail.setBounds(12, 39, 70, 19);
 		getContentPane().add(lblEmail);
 		
 		txtEmail = new JTextField();
-		txtEmail.setBounds(340, 6, 140, 19);
+		txtEmail.setBounds(100, 39, 140, 19);
 		getContentPane().add(txtEmail);
 		txtEmail.setColumns(10);
 		
