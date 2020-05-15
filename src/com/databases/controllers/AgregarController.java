@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import java.sql.Connection;
 
 import javax.swing.JInternalFrame;
+import javax.swing.JOptionPane;
 
 import com.databases.db.Connector;
 import com.databases.models.Contacto;
@@ -46,6 +47,8 @@ public class AgregarController {
 		Connection conn = connector.connectDatabase();
 		
 		connector.agregarContacto(conn, con);
+		
+		JOptionPane.showMessageDialog(null, "Contacto Guardado");
 		
 	}
 }

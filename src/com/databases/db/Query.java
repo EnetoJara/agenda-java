@@ -3,7 +3,7 @@ package com.databases.db;
 public enum Query {
 	INSERT {
 		public String toString () {
-			return "INSERT INTO contactos VALUES (?,?,?,?,?);";
+			return "INSERT INTO contactos (nombre, apellido, telefono, email, foto) VALUES (?,?,?,?,?);";
 		}
 	},
 	UPDATE {

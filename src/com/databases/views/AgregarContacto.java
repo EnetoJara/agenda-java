@@ -147,4 +147,12 @@ public class AgregarContacto extends JInternalFrame {
 		getContentPane().add(btnAgregar);
 
 	}
+	
+	public void limpiar () {
+		this.txtApellido.setText("");
+		this.txtNombre.setText("");
+		this.txtEmail.setText("");
+		this.txtTelefono.setText("");
+		
+	}
 }
